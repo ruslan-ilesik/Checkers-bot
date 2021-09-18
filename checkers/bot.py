@@ -9,7 +9,7 @@ class Bot():
         self.my_king = 2
         self.my_checker = 1
         self.enemy_checker = -0.5
-        self.enemy_king = 1.5
+        self.enemy_king = -1.5
 
     def move(self,field: Field,depth: int):
         def recursive_check(field = field,times_left = depth):
