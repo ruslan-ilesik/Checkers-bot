@@ -51,7 +51,7 @@ print(bot.move(game,depth = 3)) #depth - int
 
 
 setup(name='checkers_bot',
-      version='0.1.1',
+      version='0.1.2',
       description='Checkers bot using min max alghoritm',
       long_description=l,
       long_description_content_type='text/markdown',
