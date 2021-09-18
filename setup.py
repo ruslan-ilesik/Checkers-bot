@@ -1,3 +1,8 @@
+from setuptools import setup, find_packages
+
+
+l = """[GitHub:](https://github.com/ruslan-ilesik/tic-tac-toe-bot-pip-package)
+Usage Example
 ```python
 from checkers import Field,Bot
 game = Field(turn = 'white') #could be white and black
@@ -42,4 +47,25 @@ print(game.check_winer()) #returns False, draw, white or black  (who wins)
 ```python
 print(bot.move(game,depth = 3)) #depth - int
 ```
-> False
+> False"""
+
+
+setup(name='checkers_bot',
+      version='0.1.1',
+      description='Checkers bot using min max alghoritm',
+      long_description=l,
+      long_description_content_type='text/markdown',
+      classifiers=[
+        'Development Status :: 3 - Alpha',
+        'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python :: 3.8',
+      ],
+      keywords='checkers bot api game_api ',
+      url='https://github.com/ruslan-ilesik/Checkers-bot',
+      author='lesikr',
+      license='MIT',
+      packages=['checkers'],
+      install_requires=[],
+      include_package_data=True,
+      zip_safe=False,
+      )
