@@ -1,3 +1,5 @@
+[pypi:](https://pypi.org/project/checkers-bot/)
+
 ```python
 from checkers import Field,Bot
 game = Field(turn = 'white') #could be white and black
